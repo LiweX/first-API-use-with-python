@@ -1,6 +1,9 @@
 # Uso de la API de Alpha Vintage para consultar el precio de criptomonedas con Python3.
+
 Nos registramos en https://www.alphavantage.co/support/#api-key para obtener nuestra APIkey.
+
 Creamos un archivo .py en nuestra ide favorita.
+
 Siguiendo el ejemplo propuesto por la documentacion de la API podemos obtener la cotizacion del BTC en USD.
 ```
 import requests
@@ -13,7 +16,9 @@ print(data)
 ```
 Donde se reemplazan los asteriscos por la APIkey obtenida.
 Se corre desde la terminal usando python3
+
 `python3 *.py`
+
 La salida del programa seria la siguiente.
 ```
 {
