@@ -35,3 +35,18 @@ La salida del programa seria la siguiente.
     }
 }
 ```
+Si hacemos uso de la libreria de json podemos extraer el valor requerido se la siguiente manera
+```
+import json
+import requests
+
+url = 'https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=BTC&to_currency=USD&apikey=9N3E66AEYSMKXXHT'
+r = requests.get(url)
+data = json.loads(r.text)
+BTCtoUSD = data['Realtime Currency Exchange Rate']['5. Exchange Rate']
+print(BTCtoUSD)
+```
+La salida del programa sera:
+```
+41509.96000000
+```
